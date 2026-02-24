@@ -6,7 +6,7 @@ This project implements a supervised learning system designed to classify handwr
 ## 1. Visualizing the Input: "Blurry" Digit Data
 The dataset consists of 1,797 samples of 8x8 grayscale images. At this resolution, digits are often ambiguous. This project demonstrates how a Multi-Layer Perceptron (MLP) can achieve high-fidelity classification despite low-fidelity input.
 
-![Sample Digits Grid](./sample_digits_grid.png)
+![Sample Digits Grid](./visualizations/sample_digits_grid.png)
 *Above: A sample of the 8x8 pixel training data showing the "noisy" nature of the input.*
 
 ## Technical Implementation
@@ -34,10 +34,10 @@ To understand why the Neural Network was successful, I utilized four unsupervise
 
 | Method | Visualization | Logic |
 | :--- | :--- | :--- |
-| **t-SNE** | ![t-SNE](./tsne_plot.png) | **Highest Fidelity:** Created distinct "neighborhoods" for each digit. |
-| **PCA** | ![PCA](./pca_plot.png) | **Linear Variance:** Shows the primary axes of data spread. |
-| **Isomap** | ![Isomap](./isomap_plot.png) | **Manifold Learning:** Preserves the curved structure of the data. |
-| **Spectral** | ![Spectral](./spectral_plot.png) | **Graph Theory:** Maps connectivity between similar pixel patterns. |
+| **t-SNE** | ![t-SNE](./visualizations/tsne_plot.png) | **Highest Fidelity:** Created distinct "neighborhoods" for each digit. |
+| **PCA** | ![PCA](./visualizations/pca_plot.png) | **Linear Variance:** Shows the primary axes of data spread. |
+| **Isomap** | ![Isomap](./visualizations/isomap_plot.png) | **Manifold Learning:** Preserves the curved structure of the data. |
+| **Spectral** | ![Spectral](./visualizations/spectral_plot.png) | **Graph Theory:** Maps connectivity between similar pixel patterns. |
 ## Key Findings
 * **Complexity vs. Accuracy**: Increasing the hidden layer size from 5 to 34 neurons showed a clear trend in stabilizing model performance.
 * **Clustering**: t-SNE provided the most distinct separation, suggesting that digit recognition is highly dependent on local neighborhood relationships in the pixel space.
