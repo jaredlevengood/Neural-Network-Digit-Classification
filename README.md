@@ -7,6 +7,7 @@ This project implements a supervised learning system designed to classify handwr
 The dataset consists of 1,797 samples of 8x8 grayscale images. At this resolution, digits are often ambiguous. This project demonstrates how a Multi-Layer Perceptron (MLP) can achieve high-fidelity classification despite low-fidelity input.
 
 ![Sample Digits Grid](./visualizations/sample_digits_grid.png)
+
 *Above: A sample of the 8x8 pixel training data showing the "noisy" nature of the input.*
 
 ## Technical Implementation
